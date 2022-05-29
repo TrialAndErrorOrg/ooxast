@@ -1,3 +1,4 @@
+/* eslint-disable */
 const config = {
   displayName: 'ooxast',
   preset: '../../../jest.preset.js',
@@ -10,15 +11,15 @@ const config = {
   testEnvironment: 'node',
   transform: {
     //eslint-disable-next-line
-    '^.+\.[tj]sx?$': 'ts-jest',
+    '^.+.[tj]sx?$': 'ts-jest',
   },
   transformIgnorePatterns: [],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../../coverage/libs/ooxast',
   extensionsToTreatAsEsm: ['.ts'],
   moduleNameMapper: {
-    //eslint-disable-next-line 
-    '^(\.{1,2}/.*)\.js$': '$1',
+    //eslint-disable-next-line
+    '^(.{1,2}/.*).js$': '$1',
   },
 }
 
